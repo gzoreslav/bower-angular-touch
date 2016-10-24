@@ -285,21 +285,22 @@ ngTouch.factory('$swipe', [function() {
           return;
         }
 
+        //[gzoreslav] allow scroll and swipe
         // One of totalX or totalY has exceeded the buffer, so decide on swipe vs. scroll.
-        if (totalY > totalX) {
+        /*if (totalY > totalX) {
           // Allow native scrolling to take over.
           active = false;
           if (eventHandlers['cancel']) {
             eventHandlers['cancel'](event);
           }
           return;
-        } else {
+        } else {*/
           // Prevent the browser from scrolling.
-          event.preventDefault();
+          //event.preventDefault();
           if (eventHandlers['move']) {
             eventHandlers['move'](coords, event);
           }
-        }
+        //}
       });
 
       element.on(getEvents(pointerTypes, 'end'), function(event) {
