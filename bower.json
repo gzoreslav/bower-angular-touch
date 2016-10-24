@@ -1,6 +1,6 @@
 {
   "name": "angular-touch",
-  "version": "1.5.9-build.5079+sha.eeb9ef0",
+  "version": "1.5.10",
   "license": "MIT",
   "main": "./angular-touch.js",
   "ignore": [],
