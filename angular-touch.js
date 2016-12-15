@@ -296,7 +296,7 @@ ngTouch.factory('$swipe', [function() {
           return;
         } else {*/
           // Prevent the browser from scrolling.
-          //event.preventDefault();
+          event.preventDefault();
           if (eventHandlers['move']) {
             eventHandlers['move'](coords, event);
           }
