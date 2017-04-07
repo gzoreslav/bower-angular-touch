@@ -1,3 +1,6 @@
+/* */ 
+"format global";
+"deps angular";
 /**
  * @license AngularJS v1.5.9-build.5079+sha.eeb9ef0
  * (c) 2010-2016 Google, Inc. http://angularjs.org
